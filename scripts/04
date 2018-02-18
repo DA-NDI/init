@@ -26,4 +26,3 @@ then
 	sudo rm -rf /tmp/mail.txt
 	sudo md5sum /etc/crontab > /etc/cron_hash_check
 fi
-
