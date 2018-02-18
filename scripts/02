@@ -1,14 +1,8 @@
 #!/bin/bash
 
-#upd='sudo apt-get update && sudo apt-get upgrade'
-#0 4 * * 1 $upd >> /var/log/update_script.log 2>&1
-# OR
 sudo touch /var/log/update_script.log
-upd=$(sudo apt-get && sudo apt-get upgrade)
-echo "$upd" | sudo tee /var/log/update_script.log
-crontab -l 2>dev/null; echo "0 4 * * 1 ~/init/scripts/02" | crontab -
-#sudo touch /var/log/update_script.log
-#log=$(sudo apt-get update && sudo apt-get upgrade)
-#echo "$log" | sudo tee /var/log/update_script.log
-#if_cron = $(crontab -L   0 4 * * 1 
+upd=$(sudo apt-get update && sudo apt-get upgrade)
+echo "$upd" | sudo tee -a /var/log/update_script.log
+crontab -l 2>/dev/null; echo "0 4 * * 1 ~/init/scripts/02" | crontab -
+
 			

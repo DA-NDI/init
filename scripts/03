@@ -1,1 +1,1 @@
-sudo ls -lS 1$
+sudo ls -lS $1
