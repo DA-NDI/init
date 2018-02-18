@@ -1,0 +1,4 @@
+open /etc/hosts
+add line
+46.19.122.85 intra.42.fr
+save (on our macs permission is denied to this file)

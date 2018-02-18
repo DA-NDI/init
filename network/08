@@ -1,0 +1,7 @@
+dig slash16.org
+In additional section find IP address
+whois on that IP
+in this case:
+whois 205.251.192.144
+(or any other in this section)
+it is Amazon.com, Inc.

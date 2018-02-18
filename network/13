@@ -1,0 +1,8 @@
+First check any url with nslookup
+nslookup fb.com
+Get address:
+
+Server: 10.51.1.253
+nslookup 10.51.1.253
+we get full name ns1.unit.ua
+it is DNS server

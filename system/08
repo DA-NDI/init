@@ -1,0 +1,6 @@
+# firstly create key
+ssh-keygen -t rsa
+enter
+now it is located in ~/.ssh/
+id_rsa.pub is public key. authorized_key or any other
+name that you will enter could be not proper name for IU' research. comp system, etc

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+postfix_if_install=(which postfix)
+if [[ -z $postfix_if_install]]
+then
+	sudo apt-get install postfix
+	sudo mkifo /var/spool/postfix/public/pickup
+	sudo service postfix restart
+fi
+crontab -l 2>/dev/null; echo "0 0 * * * ~/init/scripts/04" | crontab -

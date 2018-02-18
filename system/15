@@ -1,0 +1,3 @@
+sudo pkill <process name>
+for ex:
+sudo pkill tail
